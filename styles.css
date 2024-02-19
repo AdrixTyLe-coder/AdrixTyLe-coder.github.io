@@ -1,0 +1,491 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: #F2E530;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #000;
+    font-size: 30px;
+    transition: 0.3s;
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.nav-item {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Sección Hero */
+
+.hero {
+    background-color: black;
+    min-height: 450px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.hero-principal {
+    padding: 10rem;
+    margin-top: 100px;
+}
+
+.hero-principal h2 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #D98A29;
+}
+
+.hero-imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media (min-width:991px) {
+    .hero-principal {
+        padding: 8rem;
+    }
+}
+
+/* Sección sobre mí */
+
+.sobre-mi {
+    height: 850px;
+}
+
+.sobre-mi .contenedor {
+
+    max-width: 650px;
+    text-align: left;
+}
+
+.seccion-naranja {
+    color: white;
+    background-color: #D98A29;
+}
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.seccion-texto {
+    font-size: 15px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width:655px) {
+    .seccion-texto {
+        padding: 20px;
+    }
+}
+
+/* Sección Episodios */
+
+.espaciado {
+    padding: 80px;
+    margin: 50px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.fondo-episodios {
+    background-color: black;
+    color: white;
+}
+
+.episodios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.episodio {
+    background-color: #D98A29;
+    padding: 20px;
+    text-align: center;
+}
+
+.episodio1 {
+    background-image: url(img/Pizza\ a\ domicilio.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio2 {
+    background-image: url(img/chocolate\ con\ nueves.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio3 {
+    background-image: url(img/Crustaceo_cascarudo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio4 {
+    background-image: url(img/Heroe\ dorado.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio5 {
+    background-image: url(img/banda.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio6 {
+    background-image: url(img/caja\ imaginaria.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio7 {
+    background-image: url(img/el\ jugador.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio8 {
+    background-image: url(img/dedomedio.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio9 {
+    background-image: url(img/aniversario\ bob.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio10 {
+    background-image: url(img/crustaceo-remodelacion.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio11 {
+    background-image: url(img/la\ visita.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.episodio12 {
+    background-image: url(img/pelicula.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.titulo-descripcion {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+
+}
+
+@media (max-width: 650px) {
+    .espaciado {
+        text-align: center;
+    }
+}
+
+@media (min-width: 650px) {
+    .espaciado {
+        text-align: center;
+    }
+}
+
+/* Pantallas grandes */
+
+@media (min-width: 768px) {
+    .episodios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Pantallas muy grandes */
+
+@media (min-width: 1200px) {
+    .episodios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Pantallas pequeñas */
+
+@media (max-width: 576px) {
+    .episodios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonios */
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+    background-color: #D98A29;
+    color: white;
+    height: 800px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+.visually-hidden {
+    color: white;
+}
+
+/* Contacto */
+
+.contacto-entero {
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    position: relative;
+    font-family: 'Oswald' sans-serif;
+}
+
+.contacto-titulo {
+    margin-top: 70px;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+}
+
+.form-label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    .contacto-entero {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .contacto-entero .contacto-titulo {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .form-label {
+        font-size: 17px;
+    }
+}
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #191A1C;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgb(51, 51, 51);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
